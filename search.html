@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roses Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="search.js"></script>
+    <script src="roses.js"></script>
+
+    <style>
+        body {
+            
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #14aaf5;
+        }
+
+        .btn-primary {
+            background-color: #14aaf5;
+            border-color: #14aaf5;
+            font-weight: 500;
+        }
+
+        .btn-primary:hover {
+            background-color: #0c89c8;
+            border-color: #0c89c8;
+        }
+
+        .table {
+            background-color: #fff;
+            margin-top: 30px;
+        }
+
+        .table th {
+            font-weight: 600;
+            text-transform: uppercase;
+            border-top: none;
+        }
+
+	.breadcrumb {
+		background-color: transparent;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	.breadcrumb-item {
+		color: #14aaf5;
+	}
+
+	.breadcrumb-item.active {
+		color: #495057;
+	}
+
+	.form-group {
+		margin-top: 30px;
+	}
+
+	.form-control:focus {
+		box-shadow: none;
+		border-color: #14aaf5;
+	}
+
+	.btn-primary {
+		background-color: #14aaf5;
+		border-color: #14aaf5;
+		font-weight: 500;
+	}
+
+	.btn-primary:hover {
+		background-color: #0c89c8;
+		border-color: #0c89c8;
+	}
+
+	.table {
+		background-color: #fff;
+		margin-top: 30px;
+	}
+
+	.table th {
+		font-weight: 600;
+		text-transform: uppercase;
+		border-top: none;
+	}
+
+	.footer {
+		background-color: #f8f9fa;
+		padding: 20px;
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+	}
+
+	.footer span {
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+		font-size: 14px;
+	}
+
+	.footer img {
+		height: 30px;
+		width: 30px;
+		margin-right: 5px;
+	}
+	
+</style>
+    </style>
+</head>
+        <div class="col-lg-12 text-center">
+            <table>
+                <td>
+                    <tr>
+                        <span id="headerimg"><img src="photos/ooo.jpg" height="180" width="1440"></span>
+                    </tr>
+                </td>
+            </table>
+        </div>    
+    </head>
+    <body class="body">
+        <div id="outer">
+            <div><img width="250" height="200" src="photos/logo.png" alt="Flower Farm" id="logoimg"/></div>     
+        </div> 
+				        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+			    
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Serach</li>
+                <li class="breadcrumb-item"><a href="contact us.html">Contact us</a></li>
+                <li class="breadcrumb-item"><a href="aboutus.html">About Us</a></li>
+               
+            </ol>
+        </nav>
+        <nav class="navbar justify-content-center">
+            <table>
+                <td>
+                    <tr>
+                        <a href="home.html">
+                        <span class="icon"><img src="photos/homeicon.png" height="45" width="45" ></span></a>
+                    </tr>
+                    <tr>
+                        <a href="shop.html">
+                        <span class="icon"><img src="photos/shopicon.png" height="40" width="40"></span></a>
+                    </tr>
+                    <tr>
+                        <a href="search.html">
+                        <span class="icon"><img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" height="40" width="40"></span></a>
+                    </tr>
+                    <tr>
+                        <a href="contact us.html">
+                        <span class="icon"><img src="photos/contacticon.png" height="45" width="45"></span></a>
+                    </tr>
+                    <tr>
+                        <a href="aboutus.html">
+                        <span class="icon"><img src="photos/aboutusicon.png" height="40" width="40"></span></a>
+                    </tr>
+                </td>
+            </table>
+        </nav>
+				    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1>Flowers</h1>
+            </div>
+        </div>
+		
+<body onload="process_json();">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form onsubmit="return find_movie();">
+                    <div class="form-group">
+                        <label for="movie-title">Flower Title</label>
+                        <input type="text" class="form-control" id="movie-title" placeholder="Enter Flower title...">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Size</th>
+                        </tr>
+                    </thead>
+                    <tbody id="movies_table"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</div>
+
+        <br><br>
+        
+        <div class="col-md-12 text-center">
+            <br>
+            <table>
+                <td>
+                    <tr>
+                        <span class="icon"><img src="photos/locationicon.png" height="30" width="30">Dubai, United Arab Emirates</span>
+                    </tr>
+                </td>
+                <br>
+                <td>
+                    <tr>
+                        <span class="icon"><img src="photos/clockicon.png" height="30" width="30">Delivery Hours: 10:00 AM - 10:00 PM Everyday</span>
+                    </tr>
+                </td>
+                <br>
+                <td>
+                    <tr>
+                        <span class="icon"><img src="photos/phoneicon.png" height="35" width="35">+971 4 123 4567</span>
+                    </tr>
+                </td>
+                <br>
+                <td>
+                    <tr>
+                        <span class="icon"><img src="photos/emailicon.png" height="35" width="35">flowerfarm@gmail.com</span>
+                    </tr>
+                </td>
+            </table>
+        </div>      
+    </body>    
+</html>

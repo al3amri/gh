@@ -1,0 +1,279 @@
+
+.navbar {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.navbar img {
+        width: 40px;
+}
+
+.navbar a {
+        display: block;
+        margin: auto;
+        text-align: center;
+        text-decoration: none;
+        color: #222222;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+}
+	  
+.icon {
+        display: block;
+        margin: auto;
+        margin-bottom: 5px;
+}
+
+
+
+.text-center {
+        text-align: center;
+}
+
+.mt-3 {
+        margin-top: 3rem;
+}
+
+.my-3 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+}
+
+      video {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+      }
+.contact-info {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.contact-info img {
+        width: 30px;
+        margin-right: 10px;
+}
+
+.contact-info span {
+        font-size: 18px;
+        font-weight: bold;
+        color: #222222;
+}
+
+
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#logoimg {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body {
+  margin: 0%;
+  background-color: rgb(240, 201, 208);
+  font-family: Arial, sans-serif;
+}
+
+.fname {
+  padding: 15px;
+  font-size: 18px;
+  background: #dbdfe5;
+  margin-bottom: 15px;
+}
+
+.lname{
+  padding: 15px;
+  font-size: 18px;
+  background: #dbdfe5;
+  margin-bottom: 15px;
+}
+.mobile{
+  padding: 15px;
+  font-size: 18px;
+  background: #dbdfe5;
+  margin-bottom: 15px;
+}
+.email{
+  padding: 15px;
+  font-size: 18px;
+  background: #dbdfe5;
+  margin-bottom: 15px;
+}
+.message{
+  padding: 15px;
+  font-size: 18px;
+  background: #dbdfe5;
+  margin-bottom: 15px;
+}
+.submit{
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.col-md-12{
+  background-color: rgb(209, 160, 169);
+  color: #dbdfe5;
+}
+.row{
+  justify-content: center;
+}
+.navbar{
+  background-color: rgb(209, 160, 169);
+}
+
+
+
+
+.cards {
+  width: ;
+  max-width: 350px;
+  background-color: rgb(219, 206, 206);
+  border-radius: 45px;
+  margin: 60px;
+  padding: 35px;
+  box-shadow: 2px 2px 10px black;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards:hover {
+  background-color: rgb(196, 185, 185);
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.img {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.type {
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form input[type="checkbox"],
+.form textarea {
+  margin: 5px 0;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253 13 13 / 0%);
+  padding: 10px;
+}
+
+.button button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.button button:hover {
+  background-color: #ff6347;
+}
+.img img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+
+.type{
+  text-align: center;
+  padding: 5px;
+}
+.form{
+  text-align: center;
+  padding: 5px;
+}
+button{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+
+/*-------*/
+#headerimg img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 2100px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+      @media only screen and (max-width: 768px) {
+        .navbar a {
+          font-size: 16px;
+          margin-top: 5px;
+        }
+
+        .contact-info span {
+          font-size: 16px;
+        }
